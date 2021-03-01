@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "created": "2019-12-01",
+        "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
+        "hdurl": "http://theandroidstudio.in/puppies/1.jpg",
+        "name": "Mr. Beatrice",
+        "age": "5",
+        "gender": "Male",
+        "weight": "5 kg",
+        "url": "http://theandroidstudio.in/puppies/1.jpg"
+    },
+    {
+        "id": "2",
+        "created": "2019-12-01",
+        "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
+        "hdurl": "http://theandroidstudio.in/puppies/1.jpg",
+        "name": "Ms. Angel",
+        "age": "3",
+        "gender": "Female",
+        "weight": "5 kg",
+        "url": "http://theandroidstudio.in/puppies/1.jpg"
+    }
+
+]
+
