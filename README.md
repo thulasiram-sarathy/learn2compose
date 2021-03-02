@@ -11,7 +11,7 @@ This a challenge for android jetpack compose puppy adoption. Lists down list of 
 
 ***Puppy Adoption apk
 
-[![Puppy Adoption](https://img.shields.io/badge/PUPPY%20ADOPTION-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/thulasiram-sarathy/puppy-adoption/blob/main/app/release/app-release.apk)
+[![Puppy Adoption](https://img.shields.io/badge/PUPPY%20ADOPTION-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/thulasiram-sarathy/puppy-adoption/blob/main/app/release/app-release.apk?raw=true)
 
 <br />
 
