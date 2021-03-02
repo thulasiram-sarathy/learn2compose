@@ -6,12 +6,14 @@
 
 
 ## :scroll: Description
-This a challenge for android jetpack compose puppy adoption. Lists down list of puppies from a local raw json file and displays them in light and darkmmode.
+This a challenge for android jetpack compose puppy adoption. Lists down list of puppies from a local raw json file and displays them in light and dark mode.
 
 
-## :bulb: Motivation and Context
-<!--- Optionally point readers to interesting parts of your submission. -->
-<!--- What are you especially proud of? -->
+***Puppy Adoption apk
+
+[![Puppy Adoption](https://img.shields.io/badge/Wiggles-APK-black.svg?style=for-the-badge&logo=android)](https://drive.google.com/file/d/1SYPeI0R2HHEgHr-hJHmdXTlm-Lla4bY1/view?usp=sharing)
+
+<br />
 
 
 ## :camera_flash: Screenshots
