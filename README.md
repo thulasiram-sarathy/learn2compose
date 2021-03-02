@@ -14,7 +14,7 @@ This a challenge for android jetpack compose puppy adoption. Lists down list of 
 <!--- What are you especially proud of? -->
 
 
-## :camera flash: Screenshots
+## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
 <img src="https://github.com/thulasiram-sarathy/puppy-adoption/blob/main/results/screenshot_1.png" width="260">&emsp;<img src="https://github.com/thulasiram-sarathy/puppy-adoption/blob/main/results/screenshot_2.png" width="260">
 
