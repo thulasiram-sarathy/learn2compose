@@ -16,6 +16,8 @@
 package com.example.puppyadoption.ui.view
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentWidth
@@ -28,11 +30,15 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.puppyadoption.R
+import com.example.puppyadoption.ui.theme.blue2
+import com.example.puppyadoption.ui.theme.orange
 
 @Composable
 fun GenderTag(name: String) {
-    val color = if (name == "Male") R.color.text else R.color.black
+//    val color = if (name == "Male") R.color.white else R.color.black
+    val color = R.color.white
     ChipView1(gender = name, colorResource = colorResource(id = color))
 }
 
@@ -42,7 +48,7 @@ fun ChipView1(gender: String, colorResource: Color) {
         modifier = Modifier
             .wrapContentWidth()
             .clip(RoundedCornerShape(12.dp))
-            .background(colorResource.copy(.08f))
+            .background(if (isSystemInDarkTheme()) blue2 else orange)
     ) {
         Text(
             text = gender, modifier = Modifier.padding(12.dp, 6.dp, 12.dp, 6.dp),

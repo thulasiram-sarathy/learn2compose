@@ -72,7 +72,7 @@ fun PuppyDetail(navController: NavController, id: Int, context: Context) {
         topBar = {
             TopAppBar(
                 title = { Text(PuppyRawApi.getPuppyDetail(context,id)!!.name!!) },
-                backgroundColor = MaterialTheme.colors.background,
+                backgroundColor = Color.White,
                 contentColor = colorResource(id = R.color.text),
                 navigationIcon = {
                     Icon(
@@ -129,7 +129,7 @@ fun DetailsView(id: Int, context: Context) {
             dog.apply {
 
                 Spacer(modifier = Modifier.height(24.dp))
-                Title(title = "My Story")
+                Title(title = "About Me")
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
                     text = aboutme!!,
@@ -148,7 +148,7 @@ fun DetailsView(id: Int, context: Context) {
             dog.apply {
 
                 Spacer(modifier = Modifier.height(24.dp))
-                Title(title = "Dog info")
+                Title(title = "My info")
                 Spacer(modifier = Modifier.height(16.dp))
                 Row(
                     modifier = Modifier
@@ -157,43 +157,14 @@ fun DetailsView(id: Int, context: Context) {
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     InfoCard(title = "Age", value = dog.age.toString().plus(" yrs"))
-                    InfoCard(title = "Color", value = dog.place!!)
-                    InfoCard(title = "Weight", value = weight.toString().plus("Kg"))
+                    InfoCard(title = "Place", value = dog.place!!)
+                    InfoCard(title = "Weight", value = weight.toString())
                 }
             }
         }
 
-        // Owner info
-        item {
-            dog.apply {
 
-                Spacer(modifier = Modifier.height(24.dp))
-                Title(title = "Owner info")
-                Spacer(modifier = Modifier.height(16.dp))
-                owner.apply {
-//                    OwnerCard(name, bio, image)
-                }
-            }
-        }
 
-        // CTA - Adopt me button
-        item {
-            Spacer(modifier = Modifier.height(36.dp))
-            Button(
-                onClick = { /* Do something! */ },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(52.dp)
-                    .padding(16.dp, 0.dp, 16.dp, 0.dp),
-                colors = ButtonDefaults.textButtonColors(
-                    backgroundColor = colorResource(id = R.color.text),
-                    contentColor = Color.White
-                )
-            ) {
-                Text("Adopt me")
-            }
-            Spacer(modifier = Modifier.height(24.dp))
-        }
     }
 }
 

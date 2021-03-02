@@ -15,6 +15,7 @@
  */
 package com.example.puppyadoption.ui.view
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -48,7 +49,7 @@ fun DogInfoCard(name: String, gender: String, location: String) {
             Text(
                 text = name,
                 modifier = Modifier.padding(0.dp, 0.dp, 12.dp, 0.dp),
-                color = MaterialTheme.colors.surface,
+                color = if(isSystemInDarkTheme()) Color.White else Color.Black,
                 fontWeight = FontWeight.Bold,
                 style = MaterialTheme.typography.h5
             )
@@ -68,19 +69,11 @@ fun DogInfoCard(name: String, gender: String, location: String) {
                 Text(
                     text = location,
                     modifier = Modifier.padding(8.dp, 12.dp, 12.dp, 0.dp),
-                    color = MaterialTheme.colors.surface,
+                    color = if(isSystemInDarkTheme()) Color.White else Color.Black,
                     style = MaterialTheme.typography.caption
                 )
             }
 
-            Spacer(modifier = Modifier.height(16.dp))
-
-            Text(
-                text = "12 mins ago",
-                modifier = Modifier.padding(0.dp, 0.dp, 12.dp, 0.dp),
-                color = MaterialTheme.colors.surface,
-                style = MaterialTheme.typography.overline
-            )
         }
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
             GenderTag(gender)

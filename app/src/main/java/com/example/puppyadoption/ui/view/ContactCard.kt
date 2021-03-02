@@ -15,64 +15,72 @@
  */
 package com.example.puppyadoption.ui.view
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.wrapContentWidth
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.MaterialTheme
+import androidx.compose.material.FloatingActionButton
+import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme.typography
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.puppyadoption.R
-import com.example.puppyadoption.ui.theme.blue2
-import com.example.puppyadoption.ui.theme.orange
 
 @Composable
-fun InfoCard(title: String, value: String) {
-    Box(
+fun OwnerCard(name: String, bio: String, image: Int) {
+
+    Row(
         modifier = Modifier
-            .size(90.dp)
-            .clip(RoundedCornerShape(12.dp))
-            .background(color = if (isSystemInDarkTheme()) blue2 else orange)
-            .padding(12.dp),
-        contentAlignment = Alignment.Center
+            .fillMaxWidth()
+            .padding(16.dp)
     ) {
-        Column(
-            verticalArrangement = Arrangement.Center,
-            modifier = Modifier.wrapContentWidth()
-        ) {
+        // getting the image from the drawable
+        val personImage: Painter = painterResource(id = image)
+
+        Image(
+            modifier = Modifier
+                .size(60.dp, 60.dp)
+                .clip(RoundedCornerShape(16.dp)),
+            painter = personImage,
+            alignment = Alignment.CenterStart,
+            contentDescription = "",
+            contentScale = ContentScale.Crop
+        )
+
+        Spacer(modifier = Modifier.width(16.dp))
+
+        Column(modifier = Modifier) {
             Text(
-                text = value,
-                modifier = Modifier.fillMaxWidth(),
-                color = if(isSystemInDarkTheme()) Color.White else Color.Black,
-                style = MaterialTheme.typography.subtitle1,
+                text = name,
+                color = colorResource(id = R.color.text),
+                style = typography.subtitle1,
                 fontWeight = FontWeight.W600,
-                textAlign = TextAlign.Center
+                textAlign = TextAlign.Start
             )
 
-            Spacer(modifier = Modifier.height(4.dp))
-
+            Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = title,
-                modifier = Modifier.fillMaxWidth(),
-                color = Color.White,
-                style = MaterialTheme.typography.overline,
-                textAlign = TextAlign.Center
+                text = bio,
+                color = colorResource(id = R.color.text),
+                style = typography.caption
             )
         }
     }
