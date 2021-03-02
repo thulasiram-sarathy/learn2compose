@@ -15,11 +15,15 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.puppyadoption.R
+import com.example.puppyadoption.ui.theme.blue1
+import com.example.puppyadoption.ui.theme.teal200
+import com.example.puppyadoption.ui.theme.typography
 
 @Composable
 fun TopBar(onToggle: () -> Unit) {
@@ -30,20 +34,22 @@ fun TopBar(onToggle: () -> Unit) {
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
-                text = "Hello,",
+                text = "Bow Wow,",
                 textAlign = TextAlign.Start,
-                style = MaterialTheme.typography.h5,
-                color = MaterialTheme.colors.surface
+//                style = MaterialTheme.typography.h5,
+                style = typography.h5,
+//                color = MaterialTheme.colors.surface
+                color = if(isSystemInDarkTheme()) Color.White else Color.Black
             )
 
-            Spacer(modifier = Modifier.height(8.dp))
+            /*Spacer(modifier = Modifier.height(8.dp))
 
             Text(
                 text = "Adopt a new friend near you!",
                 textAlign = TextAlign.Start,
                 style = MaterialTheme.typography.subtitle1,
                 color = MaterialTheme.colors.surface
-            )
+            )*/
         }
         Row(
             modifier = Modifier
@@ -51,16 +57,16 @@ fun TopBar(onToggle: () -> Unit) {
                 .padding(0.dp, 24.dp, 36.dp, 0.dp),
             horizontalArrangement = Arrangement.End
         ) {
-            WigglesThemeSwitch(onToggle = { onToggle() })
+            ThemeChange(onToggle = { onToggle() })
         }
     }
 }
 
 @Composable
-fun WigglesThemeSwitch(onToggle: () -> Unit) {
+fun ThemeChange(onToggle: () -> Unit) {
 
     val icon = if (isSystemInDarkTheme())
-        painterResource(id = R.drawable.ic_light_off)
+        painterResource(id = R.drawable.ic_daymode_off)
     else
         painterResource(id = R.drawable.ic_light_on)
 
@@ -70,6 +76,6 @@ fun WigglesThemeSwitch(onToggle: () -> Unit) {
         modifier = Modifier
             .size(24.dp, 24.dp)
             .clickable(onClick = onToggle),
-        tint = colorResource(id = R.color.text)
+//        tint = colorResource(id = R.color.text)
     )
 }

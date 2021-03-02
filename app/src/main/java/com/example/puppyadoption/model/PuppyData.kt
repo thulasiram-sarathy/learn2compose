@@ -13,6 +13,8 @@ data class PuppyData(
     var age: String? = null,
     var gender: String? = null,
     var weight: String? = null,
-    var url: String? = null
+    var url: String? = null,
+    var owner: String? = null,
+    var place: String? = null
 ) : Serializable {
 }

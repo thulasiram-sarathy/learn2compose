@@ -37,7 +37,7 @@ fun PuppyMain(toggleTheme: () -> Unit,context: Context) {
             "${NavigationScreen.Details.route}/{id}/{title}/{location}",
             arguments = listOf(navArgument("id") { type = NavType.IntType })
         ) {
-//            NavigationScreen(navController, it.arguments?.getInt("id") ?: 0)
+            PuppyDetail(navController, it.arguments?.getInt("id") ?: 0,context)
         }
     }
 }

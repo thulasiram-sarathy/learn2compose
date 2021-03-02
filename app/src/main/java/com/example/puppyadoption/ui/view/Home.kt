@@ -12,7 +12,7 @@ import androidx.navigation.compose.navigate
 import com.example.puppyadoption.model.PuppyData
 
 @Composable
-fun Home(navController: NavHostController, dogList: List<PuppyData>, toggleTheme: () -> Unit) {
+fun Home(navController: NavHostController, puppyList: List<PuppyData>, toggleTheme: () -> Unit) {
     LazyColumn {
         item {
             TopBar(
@@ -22,15 +22,13 @@ fun Home(navController: NavHostController, dogList: List<PuppyData>, toggleTheme
             )
             Spacer(modifier = Modifier.height(8.dp))
         }
-        /*items(dogList) {
-            dogList.forEach {
+        items(puppyList) {
                 ItemDogCard(
                     it,
                     onItemClicked = { dog ->
-                        navController.navigate("details/${dog.id}//${dog.name}/${dog.location}")
+                        navController.navigate("details/${dog.id}//${dog.name}/${dog.gender}")
                     }
                 )
-            }
-        }*/
+        }
     }
 }

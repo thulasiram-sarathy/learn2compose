@@ -25,8 +25,10 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.puppyadoption.ui.theme.MyTheme
+import com.example.puppyadoption.ui.theme.*
+import com.example.puppyadoption.ui.theme.purple700
 import com.example.puppyadoption.ui.view.PuppyMain
 
 class MainActivity : AppCompatActivity() {
@@ -50,7 +52,7 @@ fun MyApp(context: Context) {
     val toggleTheme: () -> Unit = {
         if (currentTheme) lightMode() else darkMode()
     }
-    Surface(color = MaterialTheme.colors.background) {
+    Surface(color = if(isSystemInDarkTheme()) blue1 else Color.White) {
         PuppyMain(toggleTheme,context)
     }
 }

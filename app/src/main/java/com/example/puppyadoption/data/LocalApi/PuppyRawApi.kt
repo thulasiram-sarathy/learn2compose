@@ -18,8 +18,20 @@ object PuppyRawApi {
         val listType = Types.newParameterizedType(List::class.java, PuppyData::class.java)
         val adapter: JsonAdapter<List<PuppyData>> = moshi.adapter(listType)
         val movie = adapter.fromJson(imageList)
+//        listOf(movie).get(1)
 //        return adapter.fromJson(imageList)
         return movie
+    }
+
+    fun getPuppyDetail(context: Context, id: Int): PuppyData? {
+        val imageDataContent = BaseImageLocalService.fromJsonRes(context, R.raw.puppies)
+        val imageList = imageDataContent.readText()
+        val moshi: Moshi = Moshi.Builder().build()
+        val listType = Types.newParameterizedType(List::class.java, PuppyData::class.java)
+        val adapter: JsonAdapter<List<PuppyData>> = moshi.adapter(listType)
+        val movie = adapter.fromJson(imageList)
+//        return adapter.fromJson(imageList)
+        return movie?.get(id)
     }
 
 }

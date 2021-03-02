@@ -1,25 +1,120 @@
 [
     {
-        "id": "1",
+        "id": "0",
         "created": "2019-12-01",
         "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
-        "hdurl": "http://theandroidstudio.in/puppies/1.jpg",
+        "hdurl": "https://theandroidstudio.in/puppies/1.jpg",
         "name": "Mr. Beatrice",
         "age": "5",
         "gender": "Male",
         "weight": "5 kg",
-        "url": "http://theandroidstudio.in/puppies/1.jpg"
+        "owner": "Mark",
+        "place": "Ontario",
+        "url": "https://theandroidstudio.in/puppies/1.jpg"
+    },
+    {
+        "id": "1",
+        "created": "2019-12-01",
+        "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
+        "hdurl": "https://theandroidstudio.in/puppies/2.jpg",
+        "name": "Ms. Angel",
+        "age": "3",
+        "gender": "Female",
+        "weight": "5 kg",
+        "owner": "Jane",
+        "place": "London",
+        "url": "https://theandroidstudio.in/puppies/2.jpg"
     },
     {
         "id": "2",
         "created": "2019-12-01",
         "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
-        "hdurl": "http://theandroidstudio.in/puppies/1.jpg",
-        "name": "Ms. Angel",
+        "hdurl": "https://theandroidstudio.in/puppies/3.jpg",
+        "name": "Ms. Gray",
         "age": "3",
         "gender": "Female",
         "weight": "5 kg",
-        "url": "http://theandroidstudio.in/puppies/1.jpg"
+        "owner": "Lucy",
+        "place": "St. Pauls",
+        "url": "https://theandroidstudio.in/puppies/3.jpg"
+    },
+    {
+        "id": "3",
+        "created": "2019-12-01",
+        "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
+        "hdurl": "https://theandroidstudio.in/puppies/5.jpg",
+        "name": "Ms. Gray",
+        "age": "3",
+        "gender": "Female",
+        "weight": "5 kg",
+        "owner": "Lucy",
+        "place": "St. Pauls",
+        "url": "https://theandroidstudio.in/puppies/5.jpg"
+    },
+    {
+        "id": "4",
+        "created": "2019-12-01",
+        "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
+        "hdurl": "https://theandroidstudio.in/puppies/6.jpg",
+        "name": "Ms. Gray",
+        "age": "3",
+        "gender": "Female",
+        "weight": "5 kg",
+        "owner": "Lucy",
+        "place": "St. Pauls",
+        "url": "https://theandroidstudio.in/puppies/6.jpg"
+    },
+    {
+        "id": "5",
+        "created": "2019-12-01",
+        "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
+        "hdurl": "https://theandroidstudio.in/puppies/7.jpg",
+        "name": "Ms. Gray",
+        "age": "3",
+        "gender": "Female",
+        "weight": "5 kg",
+        "owner": "Lucy",
+        "place": "St. Pauls",
+        "url": "https://theandroidstudio.in/puppies/7.jpg"
+    },
+    {
+        "id": "6",
+        "created": "2019-12-01",
+        "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
+        "hdurl": "https://theandroidstudio.in/puppies/8.jpg",
+        "name": "Ms. Gray",
+        "age": "3",
+        "gender": "Female",
+        "weight": "5 kg",
+        "owner": "Lucy",
+        "place": "St. Pauls",
+        "url": "https://theandroidstudio.in/puppies/8.jpg"
+    },
+    {
+        "id": "7",
+        "created": "2019-12-01",
+        "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
+        "hdurl": "https://theandroidstudio.in/puppies/9.jpg",
+        "name": "Ms. Gray",
+        "age": "3",
+        "gender": "Female",
+        "weight": "5 kg",
+        "owner": "Lucy",
+        "place": "St. Pauls",
+        "url": "https://theandroidstudio.in/puppies/9.jpg"
+    },
+    {
+        "id": "8",
+        "created": "2019-12-01",
+        "aboutme": "Mr. Beatrice is from the Northern part of US. I like playing and love chocolate",
+        "hdurl": "https://theandroidstudio.in/puppies/10.jpg",
+        "name": "Ms. Gray",
+        "age": "3",
+        "gender": "Female",
+        "weight": "5 kg",
+        "owner": "Lucy",
+        "place": "St. Pauls",
+        "url": "https://theandroidstudio.in/puppies/10.jpg"
     }
 
 ]
